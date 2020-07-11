@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Song</string>
+    <string name="shinchan_starting_song">Shinchan starting song</string>
+    <string name="todo">TODO</string>
+    <string name="play">play</string>
+    <string name="pause">Pause</string>
+</resources>
