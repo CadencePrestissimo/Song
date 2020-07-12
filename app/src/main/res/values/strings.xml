@@ -4,4 +4,6 @@
     <string name="todo">TODO</string>
     <string name="play">play</string>
     <string name="pause">Pause</string>
+    <string name="shinchan_ending_song">Shinchan Ending Song</string>
+    <string name="Kitretsu_song">kitretsu</string>
 </resources>
