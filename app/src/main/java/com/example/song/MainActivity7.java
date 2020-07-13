@@ -1,40 +1,40 @@
 package com.example.song;
+
 import androidx.appcompat.app.AppCompatActivity;
-import android.os.Handler;
+
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.SeekBar;
 
-
-public class MainActivity2 extends AppCompatActivity {
+public class MainActivity7 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
-
-        final MediaPlayer mMediaPlayer=MediaPlayer.create(this, R.raw.b1);
+        setContentView(R.layout.activity_main7);
+        final MediaPlayer mMediaPlayer=MediaPlayer.create(this, R.raw.b6);
         final SeekBar yourSeekbar = (SeekBar) findViewById(R.id.seekBar);
         yourSeekbar.setMax(mMediaPlayer.getDuration());
 
-                final Handler mSeekbarUpdateHandler = new Handler();
-                Runnable mUpdateSeekbar = new Runnable() {
-                    @Override
-                    public void run() {
+        final Handler mSeekbarUpdateHandler = new Handler();
+        Runnable mUpdateSeekbar = new Runnable() {
+            @Override
+            public void run() {
 
-                        new Thread(new Runnable() {
-                            public void run(){
-                                yourSeekbar.setProgress(mMediaPlayer.getCurrentPosition());
-                                mSeekbarUpdateHandler.postDelayed(this, 50);
-                            }
-                        }).start();
+                new Thread(new Runnable() {
+                    public void run(){
+                        yourSeekbar.setProgress(mMediaPlayer.getCurrentPosition());
+                        mSeekbarUpdateHandler.postDelayed(this, 50);
                     }
-                };
+                }).start();
+            }
+        };
 
-                mSeekbarUpdateHandler.postDelayed(mUpdateSeekbar, 0);
-                mSeekbarUpdateHandler.removeCallbacks(mUpdateSeekbar);
+        mSeekbarUpdateHandler.postDelayed(mUpdateSeekbar, 0);
+        mSeekbarUpdateHandler.removeCallbacks(mUpdateSeekbar);
 
         yourSeekbar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override

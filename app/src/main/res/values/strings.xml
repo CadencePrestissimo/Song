@@ -6,4 +6,10 @@
     <string name="pause">Pause</string>
     <string name="shinchan_ending_song">Shinchan Ending Song</string>
     <string name="Kitretsu_song">kitretsu</string>
+    <string name="doraemon_song">Doraemon_song</string>
+    <string name="oggy_and_the_cockroaches">Oggy And The Cockroaches</string>
+    <string name="kochikame">Kochikame</string>
+    <string name="phineas_and_ferb">Phineas And Ferb</string>
+    <string name="noddy">Noddy</string>
+    <string name="ninja_hattori">Ninja hattori</string>
 </resources>

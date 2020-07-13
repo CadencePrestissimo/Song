@@ -55,8 +55,36 @@ public class MainActivity extends AppCompatActivity {
                     Intent my = new Intent(view.getContext(), MainActivity4.class);
                     startActivityForResult(my, 0);
                 }
-
-
+                if(position==3) {
+                    view.setBackgroundColor(Color.parseColor("#c0d876"));
+                    Intent my = new Intent(view.getContext(), MainActivity5.class);
+                    startActivityForResult(my, 0);
+                }
+                if(position==4) {
+                    view.setBackgroundColor(Color.parseColor("#c0d876"));
+                    Intent my = new Intent(view.getContext(), MainActivity6.class);
+                    startActivityForResult(my, 0);
+                }
+                if(position==5) {
+                    view.setBackgroundColor(Color.parseColor("#c0d876"));
+                    Intent my = new Intent(view.getContext(), MainActivity7.class);
+                    startActivityForResult(my, 0);
+                }
+                if(position==6) {
+                    view.setBackgroundColor(Color.parseColor("#c0d876"));
+                    Intent my = new Intent(view.getContext(), MainActivity8.class);
+                    startActivityForResult(my, 0);
+                }
+                if(position==7) {
+                    view.setBackgroundColor(Color.parseColor("#c0d876"));
+                    Intent my = new Intent(view.getContext(), MainActivity9.class);
+                    startActivityForResult(my, 0);
+                }
+                if(position==8) {
+                    view.setBackgroundColor(Color.parseColor("#c0d876"));
+                    Intent my = new Intent(view.getContext(), MainActivity10.class);
+                    startActivityForResult(my, 0);
+                }
 
             }
         });
